@@ -17,8 +17,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['"Public Sans"', 'sans-serif'],
-        serif: ['Georgia', 'serif'],
+        puplic: ['"Public Sans"', 'sans-serif'],
+        georgia: ['Georgia', 'serif'],
       },
       colors: {
         customBlack: '#0A090E',

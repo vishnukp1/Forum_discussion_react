@@ -15,11 +15,21 @@ import SEARCH_NORMAL from "./images/search-normal.png";
 import SEARCH_WHITE from "./images/searchwhite.png";
 import VECTOR from "./images/Vector.png";
 import COMMENT from "./images/comment.png";
-import LOGO from "./images/Group 2.png"
-import BULB from "./images/Bulb.png"
-import SEARCH_VOILET from "./images/searchvilet.png"
-import DOWN_ARROW from "./images/downARROW.png"
-import CHAT from "./images/Chat_Conversation.png"
+import LOGO from "./images/Group 2.png";
+import BULB from "./images/Bulb.png";
+import SEARCH_VOILET from "./images/searchvilet.png";
+import DOWN_ARROW from "./images/downARROW.png";
+import CHAT from "./images/Chat_Conversation.png";
+import LONG_DOWN_ARROW from "./images/downarrowblack.png";
+import USER_ONE from "./images/users/Ellipse 13.png";
+import USER_TWO from "./images/users/Ellipse 13 (1).png";
+import USER_THREE from "./images/users/Ellipse 13 (10).png";
+import USER_FOUR from "./images/users/Ellipse 13 (2).png";
+import USER_FIVE from "./images/users/Ellipse 13 (3).png";
+import USER_SIX from "./images/users/Ellipse 13 (4).png";
+import USER_SEVEN from "./images/users/Ellipse 13 (5).png";
+import USER_EIGHT from "./images/users/Ellipse 13 (6).png";
+import USER_NINE from "./images/users/Ellipse 13 (7).png";
 
 export {
   AVATAR_ONE,
@@ -43,5 +53,15 @@ export {
   BULB,
   SEARCH_VOILET,
   DOWN_ARROW,
-  CHAT
+  CHAT,
+  LONG_DOWN_ARROW,
+  USER_ONE,
+  USER_TWO,
+  USER_THREE,
+  USER_FOUR,
+  USER_FIVE,
+  USER_SIX,
+  USER_SEVEN,
+  USER_EIGHT,
+  USER_NINE,
 };

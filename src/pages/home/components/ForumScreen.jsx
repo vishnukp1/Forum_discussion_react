@@ -1,4 +1,4 @@
-import { AVATAR_EIGHT, AVATAR_FIVE, AVATAR_FOUR, AVATAR_ONE, AVATAR_SEVEN, AVATAR_SIX, AVATAR_THREE, AVATAR_TWO, BULB, COMMENT, SEARCH_WHITE } from "../../../assets";
+import { AVATAR_EIGHT, AVATAR_FIVE, AVATAR_FOUR, AVATAR_ONE, AVATAR_SEVEN, AVATAR_SIX, AVATAR_THREE, AVATAR_TWO, BULB, COMMENT, LONG_DOWN_ARROW, SEARCH_WHITE } from "../../../assets";
 import { Button, InputBar } from "../../../components";
 import { topics } from "../../../data/data";
 
@@ -7,7 +7,7 @@ const ForumScreen = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <main className="px-6 py-12">
+      <main className=" py-12">
         <div className="text-center mb-6">
           <span className="">forum</span>
           <h1 className="text-4xl font-bold font-serif">Discuss & Evolve</h1>
@@ -39,75 +39,40 @@ const ForumScreen = () => {
               </Button>
               <span>View Topics</span>
             </div>
+            
           </div>
+          <div className="flex justify-center text-black text-5xl">
+         <img src={LONG_DOWN_ARROW} alt="arrow" />
+        </div>
         </div>
 
-        <div className="w-screen relative grid grid-cols-12 gap-4 md:grid-cols-6 sm:grid-cols-3 xs:grid-cols-3 md:gap-2 lg:gap-4 lg:grid-cols-12 xl:grid-cols-12 xl:gap-4">
-          <div className="child rounded-full bg-green-900 w-32 h-32 col-span-1">
-            <img
-              src={AVATAR_ONE}
-              alt="Avatar 4"
-              className="w-32 h-32  rounded-full object-cover"
-            />
-          </div>
-          <div className="child rounded-full bg-blue-500 w-32 h-32 pt-[-5rem] col-span-2">
-           
-            <img
-              src={AVATAR_TWO}
-              alt="Avatar 4"
-              className="w-32 h-32  rounded-full object-cover"
-            />
-          </div>
-          <div className="child rounded-full bg-green-500 w-32 h-32 pt-[-5rem] col-span-1 mt-6 md:mt-0 lg:mt-6 lg:col-span-2">
-           
-            <img
-              src={AVATAR_THREE}
-              alt="Avatar 4"
-              className="w-32 h-32  rounded-full object-cover"
-            />
-          </div>
-          <div className="child rounded-full bg-yellow-900 w-32 h-32 pt-[-5rem] col-span-2">
-           
-            <img
-              src={AVATAR_FOUR}
-              alt="Avatar 4"
-              className="w-32 h-32  rounded-full object-cover"
-            />
-          </div>
-          <div className="child rounded-full bg-red-900 w-32 h-32 pt-[-5rem] col-span-2">
-           
-            <img
-              src={AVATAR_FIVE}
-              alt="Avatar 4"
-              className="w-32 h-32  rounded-full object-cover"
-            />
-          </div>
-          <div className="child rounded-full bg-purple-500 w-32 h-32 pt-[-5rem] col-span-1">
-           
-            <img
-              src={AVATAR_SIX}
-              alt="Avatar 4"
-              className="w-32 h-32  rounded-full object-cover"
-            />
-          </div>
-          <div className="child rounded-full bg-pink-500 w-32 h-32 pt-[-5rem] col-span-1">
-           
-            <img
-              src={AVATAR_SEVEN}
-              alt="Avatar 4"
-              className="w-32 h-32  rounded-full object-cover"
-            />
-          </div>
-          <div className="child rounded-full bg-indigo-500 w-32 h-32 pt-[-5rem] col-span-2">
-           
-            <img
-              src={AVATAR_EIGHT}
-              alt="Avatar 4"
-              className="w-32 h-32  rounded-full object-cover"
-            />
-          </div>
-        </div>
-
+        <div className="flex justify-center items-center flex-wrap mb-10">
+      <div className="ml-[-2rem] mt-72 ">
+        <img src={AVATAR_ONE} alt="AVATAR" className="w-44 h-44 rounded-full bg-pink-100 pl-4  pr-3 pt-2" />
+      </div>
+      <div className="ml-[-4rem] mt-32">
+        <img src={AVATAR_TWO} alt="AVATAR" className="w-44 h-44 rounded-full bg-sky-200 pl-1 pr-1 pt-2 border-[10px] border-white" />
+      </div>
+      <div className="ml-14 mb-44">
+        <img src={AVATAR_THREE} alt="AVATAR" className="w-44 h-44 rounded-full bg-purple-400  pl-2 pr-2 pt-5" />
+      </div>
+      <div className="ml-[-35px] mt-52 mr-20">
+        <img src={AVATAR_FOUR} alt="AVATAR" className="w-44 h-44 rounded-full bg-yellow-100" />
+      </div>
+      <div className="m-4">
+        <img src={AVATAR_FIVE} alt="AVATAR" className="w-44 h-44 rounded-full bg-violet-300" />
+      </div>
+      <div className="ml-[-50px] mt-28">
+        <img src={AVATAR_SIX} alt="AVATAR" className="w-44 h-44 rounded-full bg-amber-400 p-5 pb-0 pt-6 border-[10px] border-white" />
+      </div>
+      <div className="mb-44 ">
+        <img src={AVATAR_SEVEN} alt="AVATAR" className="w-44 h-44 rounded-full bg-lime-200 p-3 pt-7 pl-4 pr-4 pb-0" />
+      </div>
+      <div className="m-4">
+        <img src={AVATAR_EIGHT} alt="AVATAR_EIGHT-8" className="w-44 h-44 rounded-full bg-sky-300 pr-3" />
+      </div>
+      
+    </div>
         <div>
           <div className="bg-gray-100  flex flex-col items-center pt-24 pb-28 p-4">
             <h2 className="text-3xl font-semibold mb-6">
@@ -118,7 +83,7 @@ const ForumScreen = () => {
                 {topics.map((topic, index) => (
                   <div
                     key={index}
-                    className="bg-black text-white p-6 flex items-center justify-center h-36 text-center rounded shadow-lg"
+                    className=" hover:bg-gradient-to-r from-red-900 via-violet-950 to-blue-950 bg-black text-white p-6 flex items-center justify-center h-36 text-center rounded shadow-lg"
                   >
                     {topic}
                   </div>

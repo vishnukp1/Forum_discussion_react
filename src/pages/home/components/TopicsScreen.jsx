@@ -48,13 +48,23 @@ const TopicsScreen = () => {
             {questions.map((question, i) => (
               <div
                 key={i}
-                className="flex justify-between items-center p-4 border border-gray-200 rounded"
+                className="flex justify-between items-center p-4 border-b border-gray-500"
               >
-                <div>
-                  <h3 className="font-semibold">{question.title}</h3>
-                  <p className="text-sm text-gray-500">
-                    Posted by {question.user}
-                  </p>
+                <div className="flex gap-2">
+                  <img
+                    src={question.image}
+                    alt="AVATAR"
+                    className=" rounded-full w-10 h-10 "
+                  />
+                  <div>
+                    <h3 className="font-semibold text-[1rem]">
+                      {question.title}
+                    </h3>
+
+                    <p className="text-sm text-gray-500">
+                      Posted by {question.user}
+                    </p>
+                  </div>
                 </div>
                 <div className="flex justify-between">
                   <Button className="bg-[#F2EFFF] flex  items-center text-[.8rem] text-customBlack px-2 gap-1 w-[8.3rem] mr-4 h-10 py-2 rounded-full">
@@ -74,27 +84,28 @@ const TopicsScreen = () => {
         </div>
         <div className="space-y-4 lg:ml-10 md:ml-56 sm:ml-24">
           <div className="flex flex-col bg-[#FFEADE] items-center p-4 h-[36rem] w-[25rem] border pt-12 border-gray-200 rounded">
-            <h3 className="font-meduim text-[1.6rem]">
+            <h3 className="font-meduim text-[1.6rem] text-center font-georgia px-20">
               Top Contributor this week
             </h3>
-            <div className="bg-[#B31942] text-white rounded-full flex items-center justify-center w-28 h-7">
-              <p className="text-[.6rem] font-medium">100+ Responses</p>
-            </div>
+            <div className="flex ">
+              <div className="bg-[#B31942] text-white rounded-full flex items-center z-20 justify-center mt-10 mr-[-2rem] w-28 h-7">
+                <p className="text-[.6rem] font-medium">100+ Responses</p>
+              </div>
 
-            <div className="bg-[#014751] text-white rounded-full flex items-center justify-center w-28 h-7">
-              <p className="text-[.6rem]  font-medium">4.2 Postive rating</p>
+              <div className="mt-2">
+                <img
+                  src={CONTRIBUTER}
+                  alt="Top Contributor"
+                  className="rounded-full mr-4"
+                />
+              </div>
+              <div className="bg-[#014751] text-white rounded-full flex items-center  mt-20 z-20  ml-[-2rem] justify-center w-28 h-7">
+                <p className="text-[.6rem]  font-medium">4.2 Postive rating</p>
+              </div>
             </div>
-
-            <div className="mt-2">
-              <img
-                src={CONTRIBUTER}
-                alt="Top Contributor"
-                className="rounded-full mr-4"
-              />
-            </div>
-            <div>
-              <p className="font-medium text-[1.3rem]">Jishnu Ambadi</p>
-              <p className="text-sm text-gray-500">
+            <p className="font-medium text-[1.3rem]">Jishnu Ambadi</p>
+            <div className="flex flex-col items-center border-[1px] mt-8 pt-8 border-t-black w-full">
+              <p className="text-sm text-gray-800">
                 You can be next one! Be a part of USA’s 1st CPT Program
                 Directory!
               </p>
@@ -110,7 +121,7 @@ const TopicsScreen = () => {
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
             }}
-            className="flex flex-col z-0 items-center h-[35.9rem] w-[25rem] text-white  border border-gray-200 rounded"
+            className="flex flex-col z-0 items-center h-[35.9rem] w-[25rem] text-white pt-[-2rem]  rounded"
           >
             <div className="contain top-16 left-14">
               <img
@@ -130,13 +141,13 @@ const TopicsScreen = () => {
               />
             </div>
 
-            <h3 className="font-meduim text-white">E-BOOK</h3>
-            <div className="text-center">
-              <p className="font-semibold">
+            <h3 className="font-meduim mt-8 text-white">E-BOOK</h3>
+            <div className="text-center  mt-8">
+              <p className="font-meduim text-xl mx-8 font-georgia">
                 Charting Paths-Program Through a Student's Eyes
               </p>
             </div>
-            <Button className="mt-4 w-[11.3rem] h-[3.06rem] border-white border-2 text-white py-2 rounded-full">
+            <Button className="mt-8 w-[11.3rem] h-[3.06rem] border-white border-2 text-white py-2 hover:bg-[#20011B] rounded-full">
               Get the guide
             </Button>
           </div>
