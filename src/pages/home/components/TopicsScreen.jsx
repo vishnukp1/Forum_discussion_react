@@ -48,7 +48,7 @@ const TopicsScreen = () => {
             {questions.map((question, i) => (
               <div
                 key={i}
-                className="flex justify-between items-center p-4 border-b border-gray-500"
+                className="flex justify-between xs:flex-col xs:gap-5 xs:mx-[-3rem] sm:mx-auto sm:flex-row items-center p-4 border-b border-gray-500"
               >
                 <div className="flex gap-2">
                   <img
@@ -78,12 +78,12 @@ const TopicsScreen = () => {
               </div>
             ))}
           </div>
-          <Button className="mt-4 w-32 h-10  text-customBlack border-customBlack border-2 py-2 rounded-full">
+          <Button className="mt-4 w-32 h-10 xs:mb-8 text-customBlack border-customBlack border-2 py-2 rounded-full">
             Load More
           </Button>
         </div>
-        <div className="space-y-4 lg:ml-10 md:ml-56 sm:ml-24">
-          <div className="flex flex-col bg-[#FFEADE] items-center p-4 h-[36rem] w-[25rem] border pt-12 border-gray-200 rounded">
+        <div className="space-y-4 lg:ml-16 md:ml-46   sm:ml-24 ">
+          <div className="flex flex-col bg-[#FFEADE] items-center p-4 h-[36rem]  xl:w-[25rem] xs:w-[18rem] md:w-[30rem] xs:ml-[-2rem] border pt-12 border-gray-200 rounded">
             <h3 className="font-meduim text-[1.6rem] text-center font-georgia px-20">
               Top Contributor this week
             </h3>
@@ -110,7 +110,7 @@ const TopicsScreen = () => {
                 Directory!
               </p>
             </div>
-            <Button className="mt-4 w-[20rem] h-[4.5rem] bg-gradient-to-r from-pink-500 to-purple-600 hover:bg-gradient-to-l text-white py-2 rounded-full">
+            <Button className="mt-4 xl:w-[20rem] xs:w-[15rem] h-[4.5rem] bg-gradient-to-r from-pink-500 to-purple-600 hover:bg-gradient-to-l text-white py-2 rounded-full">
               Join Community & Ask
             </Button>
           </div>
@@ -121,7 +121,7 @@ const TopicsScreen = () => {
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
             }}
-            className="flex flex-col z-0 items-center h-[35.9rem] w-[25rem] text-white pt-[-2rem]  rounded"
+            className="flex flex-col z-0 items-center h-[35.9rem]  xl:w-[25rem] xs:w-[18rem] xs:ml-[-2rem] md:w-[30rem] text-white pt-[-2rem]  rounded"
           >
             <div className="contain top-16 left-14">
               <img
@@ -147,7 +147,7 @@ const TopicsScreen = () => {
                 Charting Paths-Program Through a Student's Eyes
               </p>
             </div>
-            <Button className="mt-8 w-[11.3rem] h-[3.06rem] border-white border-2 text-white py-2 hover:bg-[#20011B] rounded-full">
+            <Button className="mt-8 w-[11.3rem] xs:w-[15rem] h-[3.06rem] border-white border-2 text-white py-2 hover:bg-[#20011B] rounded-full">
               Get the guide
             </Button>
           </div>
