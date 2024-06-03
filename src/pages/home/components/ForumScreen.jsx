@@ -18,12 +18,13 @@ import { topics } from "../../../data/data";
 const ForumScreen = () => {
   return (
     <div className="min-h-screen  bg-white">
+      <span className="ml-5 text-slate-500 text-[.9rem]">Home/Forum</span>
       <main className=" py-12">
         <div className="text-center mb-6 xs:mx-8 ">
 
            {/*FORUM SESSION */}
 
-          <span className="">forum</span>
+          <span className="">FURUM</span>
           <h1 className="text-4xl font-bold font-serif">Discuss & Evolve</h1>
           <p className="mt-4 text-gray-600">
             Engage with Fellow Professionals: Join the Program Forum Discussion!
