@@ -16,7 +16,7 @@ import "./topicscreen.css";
 const TopicsScreen = () => {
   return (
     <div className="mx-14 p-5">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 ">
         <div className="md:col-span-2 xl:w-[50rem] md:mb-10">
           <div className="flex justify-between items-center mb-4">
             <div className="flex items-center gap-2">
@@ -82,7 +82,7 @@ const TopicsScreen = () => {
             Load More
           </Button>
         </div>
-        <div className="space-y-4 lg:ml-16 md:ml-46   sm:ml-24 ">
+        <div className="space-y-4 lg:ml-52 md:ml-46   sm:ml-24 xl:ml-auto  ">
           <div className="flex flex-col bg-[#FFEADE] items-center p-4 h-[36rem]  xl:w-[25rem] xs:w-[18rem] md:w-[30rem] xs:ml-[-2rem] border pt-12 border-gray-200 rounded">
             <h3 className="font-meduim text-[1.6rem] text-center font-georgia px-20">
               Top Contributor this week

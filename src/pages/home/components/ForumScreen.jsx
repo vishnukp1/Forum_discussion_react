@@ -55,7 +55,7 @@ const ForumScreen = () => {
             <img src={LONG_DOWN_ARROW} alt="arrow" />
           </div>
         </div>
-        <div className="flex justify-center items-center flex-wrap mb-10 lg:mt-[-3rem]">
+        <div className="flex justify-center items-center flex-wrap mb-10 lg:mt-[-3rem] xl:mr-[-2.063rem]">
           <AVATAR
             src={AVATAR_ONE}
             alt="AVATAR"
@@ -74,7 +74,7 @@ const ForumScreen = () => {
             src={AVATAR_THREE}
             alt="AVATAR"
             aos="fade-up"
-            containerClassName="ml-14 mb-44"
+            containerClassName="ml-14 mb-44 xs:mb-[-11rem] sm:mb-auto"
             imgClassName="bg-purple-400 pl-2 pr-2 pt-5"
           />
           <AVATAR
@@ -110,7 +110,7 @@ const ForumScreen = () => {
             alt="AVATAR"
             aos="fade-right"
             containerClassName="m-4"
-            imgClassName="bg-sky-300 pr-3"
+            imgClassName="bg-sky-300 pr-3 "
           />
         </div>
 
