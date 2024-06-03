@@ -125,7 +125,7 @@ const ForumScreen = () => {
                 {topics.map((topic, index) => (
                   <div
                     key={index}
-                    className=" hover:bg-gradient-to-r from-red-900 via-violet-950 to-blue-950 bg-black text-white p-6 flex items-center justify-center h-36 text-center rounded shadow-lg"
+                    className=" hover:bg-gradient-to-r from-[#7B1234] via-[#4A1244] to-[#231252] bg-black text-white p-6 flex items-center justify-center h-36 text-center rounded shadow-lg"
                   >
                     {topic}
                   </div>
