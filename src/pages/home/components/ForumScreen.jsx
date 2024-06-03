@@ -115,7 +115,7 @@ const ForumScreen = () => {
         </div>
 
         <div>
-          <div className="bg-gray-100  flex flex-col items-center pt-20 pb-28 p-4">
+          <div className="bg-[#FFF9E3]  flex flex-col items-center pt-20 pb-28 p-4">
             <span className="text-xl">Topics</span>
             <h2 className="text-3xl font-meduim font-georgia mb-6">
               Most Searched <span className="italic ">Ones</span>

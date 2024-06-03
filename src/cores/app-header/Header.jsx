@@ -3,8 +3,8 @@ import { Button } from "../../components";
 
 const Header = () => {
   return (
-    <div>
-      <header className="grid grid-cols-12 items-center   py-4 border-b h-[6rem] border-gray-200">
+    <div className="pb-6">
+      <header className="grid grid-cols-12 items-center   py-4 border-b h-[6rem] shadow-md border-gray-200 ">
         <img
           src={LOGO}
           alt="img"
