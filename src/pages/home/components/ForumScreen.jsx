@@ -59,48 +59,56 @@ const ForumScreen = () => {
           <AVATAR
             src={AVATAR_ONE}
             alt="AVATAR"
+            aos="fade-right"
             containerClassName="ml-[-2rem] mt-72"
             imgClassName="bg-pink-100 pl-4 pr-3 pt-2"
           />
           <AVATAR
             src={AVATAR_TWO}
             alt="AVATAR"
+            aos="fade-down"
             containerClassName="ml-[-4rem] mt-32"
             imgClassName="bg-sky-200 pl-1 pr-1 pt-2 border-[10px] border-white"
           />
           <AVATAR
             src={AVATAR_THREE}
             alt="AVATAR"
+            aos="fade-up"
             containerClassName="ml-14 mb-44"
             imgClassName="bg-purple-400 pl-2 pr-2 pt-5"
           />
           <AVATAR
             src={AVATAR_FOUR}
             alt="AVATAR"
+            aos="fade-down"
             containerClassName="ml-[-35px] mt-52 mr-20 lg:mt-[15rem]"
             imgClassName="bg-yellow-100"
           />
           <AVATAR
             src={AVATAR_FIVE}
             alt="AVATAR"
+            aos="fade-left"
             containerClassName="m-4 lg:mt-[15rem]"
             imgClassName="bg-violet-300 lg:mt-[-3rem]"
           />
           <AVATAR
             src={AVATAR_SIX}
             alt="AVATAR"
+            aos="fade-right"
             containerClassName="ml-[-50px] mt-28"
             imgClassName="bg-amber-400 p-5 pb-0 pt-6 border-[10px] border-white"
           />
           <AVATAR
             src={AVATAR_SEVEN}
             alt="AVATAR"
+            aos="fade-down"
             containerClassName="mb-44"
             imgClassName="bg-lime-200 p-3 pt-7 pl-4 pr-4 pb-0"
           />
           <AVATAR
             src={AVATAR_EIGHT}
-            alt="AVATAR_EIGHT-8"
+            alt="AVATAR"
+            aos="fade-right"
             containerClassName="m-4"
             imgClassName="bg-sky-300 pr-3"
           />
