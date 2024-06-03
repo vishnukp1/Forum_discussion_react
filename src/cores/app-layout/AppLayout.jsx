@@ -21,7 +21,7 @@ const AppLayout = () => {
             <AppHeader />
           </div>
           <div className="h-full overflow-hidden">
-            <section className="h-full">
+            <section >
               <Suspense fallback={<div></div>}>
                 <Routes>
                   {routes.map((route) => (

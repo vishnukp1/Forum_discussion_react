@@ -1,7 +1,29 @@
 import { LOGO, SEARCH_NORMAL } from "../../assets";
 import { Button } from "../../components";
+import { useState, useEffect } from "react";
+import { FiAlignJustify } from "react-icons/fi";
 
 const Header = () => {
+  const [showSecondaryHeader, setShowSecondaryHeader] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+
+      if (offset > 80) {
+        setShowSecondaryHeader(true);
+      } else {
+        setShowSecondaryHeader(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="pb-6 ">
       <header className="grid grid-cols-12 items-center   py-4 border-b h-[6rem] shadow-md border-gray-200 xs:pt-2">
@@ -33,6 +55,42 @@ const Header = () => {
           </Button>
         </div>
       </header>
+
+      {/* Render the second header conditionally */}
+
+
+      {showSecondaryHeader && (
+        <div className=" flex  fixed top-0 h-16 justify-center bg-white z-20 w-full ">
+          <div className="flex h-16 w-[700px] bg-slate-700 justify-between items-center gap-6 rounded-md px-4">
+            <div className="flex items-center">
+              <img className="h-10" src={LOGO} alt="Logo" />
+            </div>
+            <div className="flex gap-6 items-center">
+              <div className="h-9 w-24 flex justify-center items-center bg-black text-white text-sm rounded-full">
+                <div className="pr-2">
+                  <FiAlignJustify />
+                </div>
+                Menu
+              </div>
+              <div className="relative h-9 w-32 flex justify-center items-center bg-gradient-to-r from-blue-500 to-rose-600 text-black text-sm rounded-full">
+                <div className="absolute inset-[2px] bg-white rounded-full flex justify-center items-center">
+                  <span className="ml-2">Discuss CPT</span>
+                </div>
+              </div>
+            </div>
+            <div className="flex items-center">
+              <button className="flex items-center">
+                <div className="h-10 w-10 flex justify-center items-center border-[5px] border-black bg-white rounded-full p-0">
+                  <img src={SEARCH_NORMAL} alt="" />
+                </div>
+                <div className="h-10 w-36 flex justify-center items-center bg-black text-white text-xs rounded-full p-0 ml-[-1px]">
+                  Join Program
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
