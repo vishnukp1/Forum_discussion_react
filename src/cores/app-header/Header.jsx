@@ -60,30 +60,30 @@ const Header = () => {
 
 
       {showSecondaryHeader && (
-        <div className=" flex  fixed top-0 h-16 justify-center bg-white z-20 w-full ">
-          <div className="flex h-16 w-[700px] bg-slate-700 justify-between items-center gap-6 rounded-md px-4">
+        <div className=" flex  fixed top-0 h-14 justify-center bg-white z-20 w-full ">
+          <div className="flex h-16 w-[700px] bg-slate-700 justify-between items-center sm:gap-6 xs:gap-1 rounded-md px-4">
             <div className="flex items-center">
               <img className="h-10" src={LOGO} alt="Logo" />
             </div>
             <div className="flex gap-6 items-center">
-              <div className="h-9 w-24 flex justify-center items-center bg-black text-white text-sm rounded-full">
+              <div className="h-9 sm:w-24 xs:w-20 flex justify-center items-center bg-customBlack text-white text-sm rounded-full">
                 <div className="pr-2">
                   <FiAlignJustify />
                 </div>
                 Menu
               </div>
-              <div className="relative h-9 w-32 flex justify-center items-center bg-gradient-to-r from-blue-500 to-rose-600 text-black text-sm rounded-full">
+              <div className="relative h-9 sm:w-32 xs:w-20 flex justify-center items-center bg-gradient-to-r from-purple-600 to-pink-500 text-black text-sm rounded-full">
                 <div className="absolute inset-[2px] bg-white rounded-full flex justify-center items-center">
-                  <span className="ml-2">Discuss CPT</span>
+                  <span className="ml-2 xs:text-[11px] xs:font-meduim sm:text-[.8rem]">Discuss CPT</span>
                 </div>
               </div>
             </div>
             <div className="flex items-center">
               <button className="flex items-center">
-                <div className="h-10 w-10 flex justify-center items-center border-[5px] border-black bg-white rounded-full p-0">
+                <div className="h-10 w-10 flex justify-center items-center border-[5px] border-customBlack bg-white rounded-full p-0">
                   <img src={SEARCH_NORMAL} alt="" />
                 </div>
-                <div className="h-10 w-36 flex justify-center items-center bg-black text-white text-xs rounded-full p-0 ml-[-1px]">
+                <div className="h-10 w-36 flex justify-center items-center bg-customBlack text-white text-xs rounded-full p-0 ml-[-1px]">
                   Join Program
                 </div>
               </button>
