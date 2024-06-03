@@ -10,6 +10,10 @@ In the project directory, you can run:
 
 ### `Tailwind,aos`
 
+## Animation
+
+Used  `aos laibrary` for animations
+
 ## Responsiveness
 
 The project is optimized for various devices including `iPhone Mini, iPhone Pro, iPad Mini, iPad Pro, and laptops`.
