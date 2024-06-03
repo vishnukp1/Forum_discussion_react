@@ -20,6 +20,9 @@ const ForumScreen = () => {
     <div className="min-h-screen  bg-white">
       <main className=" py-12">
         <div className="text-center mb-6 xs:mx-8 ">
+
+           {/*FORUM SESSION */}
+
           <span className="">forum</span>
           <h1 className="text-4xl font-bold font-serif">Discuss & Evolve</h1>
           <p className="mt-4 text-gray-600">
@@ -113,6 +116,8 @@ const ForumScreen = () => {
             imgClassName="bg-sky-300 pr-3 "
           />
         </div>
+      
+        {/*TOPICS SESSION */}
 
         <div>
           <div className="bg-[#FFF9E3]  flex flex-col items-center pt-20 pb-28 p-4">
