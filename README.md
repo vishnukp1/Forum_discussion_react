@@ -10,11 +10,9 @@ In the project directory, you can run:
 
 ### `Tailwind,aos`
 
-## Components
+## Responsiveness
 
-Describe the reusable components included in the project:
-
-### `button,input,searchbar`
+The project is optimized for various devices including `iPhone Mini, iPhone Pro, iPad Mini, iPad Pro, and laptops`.
 
 ## Folder Structure
 
